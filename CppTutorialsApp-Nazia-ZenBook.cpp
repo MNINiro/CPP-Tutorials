@@ -44,16 +44,13 @@ void arrOfPointer();
 void pointerToPointer();
 void passingPointer();
 void returnPointer();
-void DynamicArray();
 
-void refTest2();
 void reference();
 void refeAsParameters();
 void referenceAsReturnValue();
 
-void dateTime();
+//void dateTime();
 //void dateTimeFormat();
-void strintToDate();
 
 void inputData();
 
@@ -65,15 +62,10 @@ void LinearSearch(int arr[], int len, int item);
 void recurFunction();
 
 void randNmber();
-void randGenerator();
 void printASCII(char c);
-void randRange();
-void RandOddEven();
-void matrix();
+void randDate();
 
-void nullValue();
-void nullValue1();
-void nullValue2();
+void grade(int marks);
 
 int main()
 {
@@ -148,9 +140,11 @@ int main()
     cout << "======== Do While Loop ===========" << endl;
     doWhileLoop();
    
+
     cout << "======== Array ===========" << endl;
     arrayType(); 
    
+
     cout << "====== 2D Array ==========" << endl;
     array2D();
     
@@ -169,57 +163,48 @@ int main()
     
     cout << "======== Random Numbers ===========" << endl;
     randomNumbers();
-    
+
     cout << "======== Pointers ===========" << endl;
     pointers();
-   
+    
     cout << "======== Null Pointers ===========" << endl;
     pointersNull();
-    
+
     cout << "======== Pointer increment ===========" << endl;
     pointerInc();
-  
+
     cout << "======== Pointer Decrement ===========" << endl;
     pointerDec();
-         
+
     cout << "======== Pointer Comparision ===========" << endl;
     pointerCompare();
-    
+
     cout << "======== Array of Pointer ===========" << endl;
     arrOfPointer(); 
-       
+
     cout << "======== Pointer to a pointer ===========" << endl;
     pointerToPointer(); 
-          
+
     cout << "======== Passing Pointer to a function ===========" << endl;
     passingPointer(); 
-   
-        
+
     cout << "======== Return Pointer from a function ===========" << endl;
     returnPointer(); 
-    
-    cout << "============= DynamicArray==================" << endl;
-    DynamicArray();
-    
-  
-    cout << "======== Reference ===========" << endl;
-    refTest2();
-    
-   
+
     cout << "======== Reference ===========" << endl;
     reference(); 
-         
+
     cout << "======== Reference ===========" << endl;
     refeAsParameters(); 
-        
-    cout << "======== Reference as Return Value ===========" << endl;
-    referenceAsReturnValue();
     
+    cout << "======== Reference as Return Value ===========" << endl;
+    referenceAsReturnValue(); 
+
     //cout << "======== Date and Time ===========" << endl;
     //dateTime();
     //dateTimeFormat(); 
-    //strintToDate();
     
+
     //cout << "======== Input and output ===========" << endl;
     inputData();
 
@@ -239,32 +224,29 @@ int main()
     
     cout << "Enter number to be searched:", cin >> item;                              // item to be searched
     LinearSearch(arr, len, item); 
-    */
+    
 
     //cout << "======== Recursive function ===========" << endl;
     recurFunction();
-    /*
+
     cout << "======== Random ===========" << endl;
     randNmber();
-
-    cout << "======== Random Generator ===========" << endl;
-    randGenerator();
         
     cout << "======== Random ===========" << endl;
     printASCII('A');
 
-    randRange();
+    randDate();*/
 
-    RandOddEven();
-   
-    matrix(); 
+    int marks[5]{};
+    int i, m;
+
+    for (i = 0; i < 5; i++) {
+        cout << "Enter Marks: ", cin >> m;
+        marks[i] = m;
+    }
+
+    grade(marks[5]);
     
-    nullValue();
-  
-    nullValue1();
-          
-    nullValue2();
-      */
 }   
 
 

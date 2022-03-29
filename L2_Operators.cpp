@@ -3,7 +3,7 @@
 using namespace std;
 
 void arithmetic_operators() {
-	int a = 20, b = 10, c;
+	int a = 20, b = 15, c;
 
 	c = a + b;
 	cout << "Addition: " << c << endl;
@@ -25,7 +25,15 @@ void relational_operator() {
 	int x = 5, y = 2, z;
 
 	z = x > y;
-	cout << " z = " << z << endl;
+
+	if (z == 0) {
+		cout << "False" << endl;
+	}
+	else {
+		cout << "True" << endl;
+	}
+	
+	//cout << " z = " << z << endl;
 
 	z = x < y;
 	cout << " z = " << z << endl;
@@ -116,38 +124,45 @@ void assignment_operator() {
 	int c;
 
 	c = a;
-	cout << "Line 1 - =  Operator, Value of c = : " << c << endl;
+	cout << "Line 1  =  Operator, Value of c = : " << c << endl;
 
+	// c += a is equal to c = c + a
 	c += a;
-	cout << "Line 2 - += Operator, Value of c = : " << c << endl;
+	cout << "Line 2  += Operator, Value of c = : " << c << endl;
 
+	// c -= a is equal to c = c - a
 	c -= a;
-	cout << "Line 3 - -= Operator, Value of c = : " << c << endl;
+	cout << "Line 3  -= Operator, Value of c = : " << c << endl;
 
+	// c *= a is equal to c = c * a
 	c *= a;
-	cout << "Line 4 - *= Operator, Value of c = : " << c << endl;
+	cout << "Line 4  *= Operator, Value of c = : " << c << endl;
 
+	// c /= a is equal to c = c / a
 	c /= a;
-	cout << "Line 5 - /= Operator, Value of c = : " << c << endl;
+	cout << "Line 5  /= Operator, Value of c = : " << c << endl;
 
+	// c %= a is equal to c = c % a 
 	c = 200;
 	c %= a;
-	cout << "Line 6 - %= Operator, Value of c = : " << c << endl;
+	cout << "Line 6  %= Operator, Value of c = : " << c << endl;
 
+	// c <<= 2 is equal to c = 2 bit left-shift of c
 	c <<= 2;
-	cout << "Line 7 - <<= Operator, Value of c = : " << c << endl;
+	cout << "Line 7  <<= Operator, Value of c = : " << c << endl;
 
+	// c <<= 2 is equal to c = 2 bit right-shift of c
 	c >>= 2;
-	cout << "Line 8 - >>= Operator, Value of c = : " << c << endl;
+	cout << "Line 8  >>= Operator, Value of c = : " << c << endl;
 
 	c &= 2;
-	cout << "Line 9 - &= Operator, Value of c = : " << c << endl;
+	cout << "Line 9  &= Operator, Value of c = : " << c << endl;
 
 	c ^= 2;
-	cout << "Line 10 - ^= Operator, Value of c = : " << c << endl;
+	cout << "Line 10  ^= Operator, Value of c = : " << c << endl;
 
 	c |= 2;
-	cout << "Line 11 - |= Operator, Value of c = : " << c << endl;
+	cout << "Line 11  |= Operator, Value of c = : " << c << endl;
 }
 
 //Operator precedence
@@ -158,7 +173,7 @@ void precedence_operator() {
 	int d = 5;
 	int e;
 
-	e = (a + b) * c / d;      // ( 30 * 15 ) / 5
+	e = (a + b) * c / d;      //  30 * (15  / 5)
 	cout << "Value of (a + b) * c / d is :" << e << endl;
 
 	e = ((a + b) * c) / d;    // (30 * 15 ) / 5

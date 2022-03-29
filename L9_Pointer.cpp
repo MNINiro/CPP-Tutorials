@@ -101,7 +101,7 @@ void pointerCompare() {
 /* int *ptr[MAX];
 This declares ptr as an array of MAX integer pointers. Thus, each element in ptr, 
 now holds a pointer to an int value. Following example makes use of three integers 
-which will be stored in an array of pointers as follows − */
+which will be stored in an array of pointers as follows */
 
 void arrOfPointer() {
 	int  var[MAX] = { 10, 100, 200 };
@@ -140,6 +140,7 @@ void pointerToPointer() {
 
 //Ex-8-Passing Pointers to Functions
 void getSeconds(unsigned long* par);
+	
 
 void passingPointer() {
 	unsigned long sec;
@@ -160,7 +161,7 @@ void getSeconds(unsigned long* par) {
 //Ex-9-Return Pointer from Functions
 // function to generate and retrun random numbers.
 int* getRandom() {
-	static int  r[10];
+	static int  r[10]{};
 
 	// set the seed
 	srand((unsigned)time(NULL));
@@ -183,4 +184,25 @@ void returnPointer() {
 		cout << *(p + i) << endl;
 	}
 	return;
+}
+
+//Dynamic Array by pointer
+void DynamicArray() {
+
+	float* A;
+	int n;
+	cout << "Enter the size of the Array (n):";
+	cin >> n;
+	
+	srand(time(0));
+
+	A = new float[n];
+
+	for (int i = 0; i < n; i++) {
+		A[i] = 2 * (1.0 * rand() / RAND_MAX) - 1.0;
+	}
+
+	for (int i = 0; i < n; i++) {
+		cout << "Element of index " << i << " = " << A[i] << endl;
+	}
 }

@@ -4,20 +4,23 @@ using namespace std;
 
 void forLoop() {
 	// for loop execution
-	for (int a = 1; a < 10; a++) {
+
+	for (int a = 1; a <= 10; a+=2) {
 		cout << "value of a: " << a << endl;
 	}
 }
 
 void nestedForLoop() {
 	//Ex-1 for loop execution
-	for (int i = 1; i < 5; i++) {
-		for (int j = 1; j < 5; j++) {
-			cout << "value of i & j: " << i << ' ' << j << endl;
-			cout << "Result: " << i * j << endl;
+	for (int i = 1; i <= 3; i++) {
+		for (int j = 1; j <= 5; j++) {
+			cout << "value of i & j: " << i << 'x' << j << '=' << i * j << endl;
+			//cout << "Result: " << i * j << endl;
 		}
 	}
+}
 
+void primeNumber(){
 	//Ex-2 Nested for loop to generate prime number
 	int i, j;
 
@@ -29,15 +32,15 @@ void nestedForLoop() {
 }
 
 void whileLoop() {
-	// Local variable declaration:
-	int a = 10;
+	int a = 10;								// Local variable declaration:
 
-	// while loop execution
-	while (a < 20) {
+	while (a < 20) {						// while loop execution
 		cout << "value of a: " << a << endl;
+		//if (a == 15) break;
 		a++;
 	}
 }
+
 
 void doWhileLoop() {
 	int a = 1;

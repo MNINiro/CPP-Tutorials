@@ -10,8 +10,8 @@ using namespace std;
 //Ex-1
 void reference() {
 	// declare simple variables
-	int    i;
-	double d;
+	int    i = 0;
+	double d = 0.0;
 
 	// declare reference variables
 	int& r = i;
@@ -84,4 +84,30 @@ void referenceAsReturnValue() {
 		cout << "vals[" << i << "] = ";
 		cout << vals[i] << endl;
 	}
+}
+
+void refTest1() {
+
+	int x = 5;
+	int& xr = x;
+	const int& xrc = x;
+	
+	xr *= xr;
+	// xrc *= x; //since it is a constant object
+	cout << "xr: " << xr << endl;
+	cout << "xrc: " << xrc << endl;
+
+	return;
+}
+
+void refTest2() {
+	int x = 5;
+	int& xr = x;
+	int& xrr = x;
+
+	xr *= xr;
+	cout << "xr: " << xr << endl;
+
+	xrr *= xrr;
+	cout << "xrr: " << xrr << endl;	
 }

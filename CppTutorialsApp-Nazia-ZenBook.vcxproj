@@ -157,9 +157,9 @@
     <ClCompile Include="L9_Pointer.cpp" />
     <ClCompile Include="L13_linearSearch.cpp" />
     <ClCompile Include="L16_recursiveFunction.cpp" />
-    <ClCompile Include="Matrix.cpp" />
-    <ClCompile Include="NullValue.cpp" />
     <ClCompile Include="random.cpp" />
+    <ClCompile Include="randomDatecpp.cpp" />
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
